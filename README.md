@@ -1,2 +1,3 @@
-# emc_python_api
+# Emercoin.py
+
 Emercoin python 3 API
