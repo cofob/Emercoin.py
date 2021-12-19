@@ -8,7 +8,7 @@ class NVSRecord:
     type: str = None
 
     def __post_init__(self):
-        l = self.name.split(':')
+        l = self.name.split(":")
         t = None
         try:
             l[1]
@@ -17,7 +17,7 @@ class NVSRecord:
             pass
 
     def __str__(self) -> str:
-        return self.name + '=' + self.value
+        return self.name + "=" + self.value
 
 
 @dataclass
