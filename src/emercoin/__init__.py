@@ -1,4 +1,4 @@
-import models
+import emercoin.models as models
 from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 
 
