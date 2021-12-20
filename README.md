@@ -25,4 +25,10 @@ emer.get_names_by_type('dns')
 
 # if we simply want get all NVS records by regex and fetch full record body
 emer.get_names_by_regex(r'^dns:[\d]+\.(emc)')
+
+# we can get NVS record history too
+emer.name_history('dns:cofob.ru')
+
+# or call rpc connection directly (bitcoinrpc used)
+emer.rpc_connection.method_name(argument1, argument2)
 ```
