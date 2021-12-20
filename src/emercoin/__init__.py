@@ -3,8 +3,12 @@ from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 
 
 class Emer:
-    def __init__(self, user: str, password: str, host: str = 'localhost', port: int = 6662):
-        self.rpc_connection = AuthServiceProxy(f"http://{user}:{password}@{host}:{str(port)}")
+    def __init__(
+        self, user: str, password: str, host: str = "localhost", port: int = 6662
+    ):
+        self.rpc_connection = AuthServiceProxy(
+            f"http://{user}:{password}@{host}:{str(port)}"
+        )
 
     def get_block_count(self) -> int:
         return self.rpc_connection.getblockcount()

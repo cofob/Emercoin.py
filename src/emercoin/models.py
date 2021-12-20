@@ -17,7 +17,7 @@ class NVSRecord:
             pass
 
     def __repr__(self) -> str:
-        return self.name + '=' + self.value
+        return self.name + "=" + self.value
 
 
 @dataclass
