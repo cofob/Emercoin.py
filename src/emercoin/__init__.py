@@ -53,7 +53,7 @@ class Emer:
         return ret
 
     def get_names_by_regex(self, regex: str) -> [models.NVSTx]:
-        l = self.name_filter(f"{regex}")
+        l = self.name_filter(regex)
         ret: [models.NVSTx] = []
         for n in l:
             try:
