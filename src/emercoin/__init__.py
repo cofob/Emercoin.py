@@ -2,7 +2,7 @@ import models
 from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 
 
-class EmcApi:
+class Emer:
     def __init__(self, user: str, password: str, host: str = 'localhost', port: int = 6662):
         self.rpc_connection = AuthServiceProxy(f"http://{user}:{password}@{host}:{str(port)}")
 

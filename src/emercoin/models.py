@@ -13,10 +13,10 @@ class NVSRecord:
         try:
             l[1]
             self.type = l[0]
-        except:
+        except IndexError:
             pass
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         return self.name + '=' + self.value
 
 
@@ -25,7 +25,7 @@ class EmcAddress:
     address: str
     balance: float = None
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         return self.address
 
 
@@ -35,7 +35,7 @@ class Transaction:
     timestamp: int
     height: int = None
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         return self.tx_id
 
 
